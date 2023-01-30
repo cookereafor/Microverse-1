@@ -1,64 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
-    <h1>Hello World</h1
-
-  </body>
-</html>
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Product Landing Page</title>
-  </head>
-  <body>
-    <header>
-      <h1>Product Name</h1>
-      <nav>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="features">
-        <h2>Features</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna non sollicitudin convallis, nibh elit blandit velit, id rutrum velit metus vel erat. Sed euismod, sapien a bibendum vestibulum, sapien ante elementum est, id interdum sem sapien ac enim. </p>
-      </section>
-      <section id="pricing">
-        <h2>Pricing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna non sollicitudin convallis, nibh elit blandit velit, id rutrum velit metus vel erat. Sed euismod, sapien a bibendum vestibulum, sapien ante elementum est, id interdum sem sapien ac enim. </p>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna non sollicitudin convallis, nibh elit blandit velit, id rutrum velit metus vel erat. Sed euismod, sapien a bibendum vestibulum, sapien ante elementum est, id interdum sem sapien ac enim. </p>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2023</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Product Landing Page</title>
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUEwts4uoA2Zk4uGFSWayTNfoLgraSoxF2g&usqp=CAU" alt="logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#feature-section">Features</a>
+      <a class="nav-link" href="#price-section">Pricing</a>
+      <a class="nav-link" href="#video-section">Video</a>
+    </nav>
+  </header>
+  <main>
+    <section id="feature-section">
+      <h2>Features</h2>
+      <p>This is a product landing page for a fictional product. It includes a header with a logo and a navigation bar, a video section, a pricing section, and a form to submit an email address.</p>
+    </section>
+    <section id="price-section">
+      <h2>Pricing</h2>
+      <p>This product has the following pricing plans:</p>
+      <ul>
+        <li>Free Plan: includes basic features</li>
+        <li>Standard Plan: includes all features and costs $9.99/month</li>
+        <li>Premium Plan: includes all features and priority support and costs $19.99/month</li>
+      </ul>
+    </section>
+    <section id="video-section">
+      <h2>Product Video</h2>
+      <iframe id="video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </section>
+  </main>
+  <footer>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <input id="email" type="email" name="email" placeholder="Enter your email address">
+      <input id="submit" type="submit" value="Subscribe">
+    </form>
+  </footer>
+</body>
 </html>
